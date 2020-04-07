@@ -30,7 +30,7 @@ jobs:
           enviroment:
               JEST_JUNIT_OUTPUT_DIR: "./junit/test-results.xml"
               when: always
-      - stor_test_results:
+      - store_test_results:
           path: ./junit
       - store_artifacts:
           path: ./junit
